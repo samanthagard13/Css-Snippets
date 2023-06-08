@@ -1,0 +1,75 @@
+* {
+    background-color: rgb(128, 128, 128);
+    margin: 0;
+}
+.header {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.header h1 {
+    color: rgb(0, 104, 104);
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    padding: 20px;
+}
+.header p {
+    color: rgb(230, 229, 229);
+    padding: 20px;
+    text-align: center;
+}
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+.boxes {
+    border: 5px dotted black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    width: 25%;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.boxes:hover{
+    box-shadow: 0 0 20px rgba(230, 229, 229);
+}
+.boxes h2 {
+    color: rgb(0, 104, 104);
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    margin-top: -40px;
+}
+.boxes p {
+    color: rgb(230, 229, 229);
+    padding: 10px;
+}
+.boxes pre {
+    background: linear-gradient(rgb(0, 104, 104), rgb(226, 226, 226));
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    user-select: all;
+}
+::selection {
+    background-color: rgb(230, 229, 229);
+    color: rgb(0, 104, 104);
+}
+@media screen and (max-width: 992px) {
+    .boxes {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .boxes {
+      width: 80%
+    }
+  }
